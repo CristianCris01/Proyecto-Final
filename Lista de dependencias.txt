@@ -1,0 +1,18 @@
+Dependencias Frontend
+
+1.-React
+2.-Boostrap
+3.-React Router
+4.-Axios
+
+Dependencias Backend
+
+1.-Express
+2.-Cors
+3.-File System
+4.-Jest
+5.-Super test
+6.-Nodemon
+7.-Json web token
+8.-Bcrypt
+9.-Dotenv
