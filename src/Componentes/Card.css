@@ -1,0 +1,137 @@
+.productItemCard {
+  overflow: hidden;
+  border: 1px solid rgba(234, 220, 210, 0.8);
+  border-radius: 14px;
+  background: #fffaf6;
+  box-shadow: 0 14px 32px rgba(87, 68, 55, 0.09);
+  text-align: left;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.productItemCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 38px rgba(87, 68, 55, 0.15);
+}
+
+.productItemImage {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1.15;
+  background: #f0e5dc;
+}
+
+.productItemImage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 250ms ease;
+}
+
+.productItemCard:hover .productItemImage img {
+  transform: scale(1.04);
+}
+
+.productItemBadge,
+.productItemFavorite {
+  position: absolute;
+  top: 14px;
+  display: grid;
+  place-items: center;
+  min-height: 34px;
+  border-radius: 999px;
+  background: rgba(255, 250, 246, 0.94);
+  color: #59483f;
+}
+
+.productItemBadge {
+  left: 14px;
+  padding: 0 13px;
+  color: #9a625d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.productItemFavorite {
+  right: 14px;
+  width: 36px;
+  font-size: 15px;
+}
+
+.productItemInfo {
+  padding: 20px;
+}
+
+.productItemCategory {
+  margin: 0 0 7px;
+  color: #a77c68;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.productItemInfo h2 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.productItemDescription {
+  min-height: 42px;
+  margin: 0 0 13px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.productItemRating {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+}
+
+.productItemRating span {
+  display: inline-flex;
+  gap: 2px;
+  color: #d3a35f;
+  font-size: 12px;
+}
+
+.productItemRating small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.productItemBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 15px;
+}
+
+.productItemPrice {
+  margin: 0;
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.productItemPrice span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.productItemAvailability {
+  color: #66836f;
+  font-size: 11px;
+  font-weight: 600;
+}

@@ -1,0 +1,141 @@
+.Login,
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 55vh;
+  padding: 32px 16px;
+  background: linear-gradient(180deg, #fffaf6 0%, #f3f7ef 100%);
+}
+
+.ContainerLogin,
+.ContainerRegister {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: min(420px, 100%);
+  min-height: 0;
+  padding: 36px;
+  border: 1px solid #eadcd2;
+  border-radius: 20px;
+  background: #fffaf4;
+  box-shadow: 0 18px 48px rgba(94, 69, 52, 0.12);
+}
+
+.ContainerLogin h1,
+.ContainerRegister h1 {
+  margin: 0 0 24px;
+  color: #4d413b;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ContainerLogin br,
+.ContainerRegister br {
+  display: none;
+}
+
+.ContainerLogin label,
+.ContainerRegister label {
+  margin: 0 0 7px;
+  color: #4d413b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.inputRegister {
+  width: 100%;
+  min-height: 46px;
+  margin-bottom: 18px;
+  padding: 10px 13px;
+  border: 1px solid #d9c9bd;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #4d413b;
+  font: inherit;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.inputRegister::placeholder {
+  color: #a99a90;
+}
+
+.inputRegister:focus {
+  border-color: #c98c86;
+  box-shadow: 0 0 0 3px rgba(201, 140, 134, 0.18);
+}
+
+.buttonRegister,
+.buttonCancel {
+  min-height: 46px;
+  padding: 11px 20px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease,
+    box-shadow 160ms ease, transform 160ms ease;
+}
+
+.buttonRegister {
+  margin-top: 6px;
+  background: #c98c86;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(201, 140, 134, 0.24);
+}
+
+.buttonRegister:hover {
+  background: #b97873;
+  box-shadow: 0 8px 18px rgba(185, 120, 115, 0.3);
+  transform: translateY(-1px);
+}
+
+.buttonCancel {
+  margin-top: 6px;
+  border-color: #d9c9bd;
+  background: transparent;
+  color: #6f5c50;
+}
+
+.buttonCancel:hover {
+  border-color: #b7845c;
+  background: #f7eee7;
+  transform: translateY(-1px);
+}
+
+.buttonRegister:focus-visible,
+.buttonCancel:focus-visible {
+  outline: 3px solid rgba(159, 184, 173, 0.65);
+  outline-offset: 3px;
+}
+
+.ButtonsRegister {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.ButtonsRegister button {
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .ContainerLogin,
+  .ContainerRegister {
+    padding: 28px 22px;
+  }
+
+  .ContainerLogin h1,
+  .ContainerRegister h1 {
+    font-size: 26px;
+  }
+
+  .ButtonsRegister {
+    flex-direction: column;
+  }
+}

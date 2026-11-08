@@ -1,0 +1,97 @@
+.siteFooter {
+  padding: 48px clamp(24px, 7vw, 120px) 0;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr auto;
+  gap: 40px;
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+
+.footerStoreName {
+  display: inline-block;
+  color: var(--ink);
+  font-family: 'Great Vibes', cursive;
+  font-size: 52px;
+  line-height: 1.2;
+}
+
+.footerBrand p,
+.footerContactLine {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.siteFooter h2 {
+  margin: 0 0 18px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footerContactLine {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-style: normal;
+}
+
+.footerContactLine svg {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 3px;
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.footerSocialLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.footerSocialLinks a {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--rose);
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 20px;
+  transition: background 180ms ease;
+}
+
+.footerSocialLinks a:hover {
+  background: var(--rose);
+}
+
+.siteFooter a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 5px;
+}
+
+.footerCopyright {
+  margin: 0;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
