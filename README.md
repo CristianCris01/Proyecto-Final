@@ -1,18 +1,25 @@
-# React + Vite
+----------------Proyecto Final JS----------------------
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El proyecto esta dividido en 5 hitos.
 
-Currently, two official plugins are available:
+Hito 1
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+.-Diseño de la interfaz gráfica
+.-Definición de la navegación entre las vistas
+.-Listado de dependencias a utilizar en el proyecto
+.-Diseño las tablas de la base de datos y sus relaciones
+.-Diseñar el contrato de datos de la API REST
 
-## React Compiler
+Hito 2
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Implementacion del Frontend el cual contiene:
 
-Note: This will impact Vite dev & build performances.
+.-Home
+.-Footer
+.-Registro
+.-Login
+.-Productos
 
-## Expanding the ESLint configuration
+Este Hito esta desplegado en vercel para su visualizacion: https://proyecto-final-ucni.vercel.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
